@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brand Kit & Icon Explorer</title>
+    
+    <!-- Google Fonts: Noto Sans Arabic (UI) & Amiri Quran (Quranic Text) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Noto+Sans+Arabic:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Load Lucide Icons -->
@@ -19,7 +25,8 @@
                         accent: '#06B6D4'
                     },
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
+                        sans: ['"Noto Sans Arabic"', '"Inter"', 'sans-serif'],
+                        quran: ['"Amiri Quran"', 'serif'],
                         serif: ['Georgia', 'serif'],
                     }
                 }
@@ -28,12 +35,10 @@
     </script>
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-
         body {
             background-color: #f8f9fc;
             margin: 0;
-            font-family: 'Inter', sans-serif;
+            font-family: 'Noto Sans Arabic', 'Inter', sans-serif;
             color: #1E293B;
         }
 
@@ -236,7 +241,19 @@
             </div>
 
             <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm flex flex-col md:flex-row gap-12" dir="rtl">
+                <!-- Noto Sans Arabic (UI Font) -->
                 <div class="flex-1 space-y-8">
+                    <!-- Font Identity Header -->
+                    <div class="flex items-center justify-between border-b border-slate-100 pb-4 mb-6" dir="ltr">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-800 font-sans">Noto Sans Arabic</h3>
+                            <p class="text-sm text-slate-500">Primary UI Font (Optimized for Kurdish)</p>
+                        </div>
+                        <a href="https://fonts.google.com/specimen/Noto+Sans+Arabic" target="_blank" class="flex items-center gap-2 bg-slate-50 hover:bg-slate-100 text-slate-700 px-4 py-2 rounded-xl text-xs font-bold border border-slate-200 transition-colors">
+                            <i data-lucide="external-link" class="w-3 h-3"></i> Google Fonts
+                        </a>
+                    </div>
+
                     <div>
                         <p class="text-[11px] text-slate-400 font-mono text-left mb-2 uppercase tracking-wider" dir="ltr">H1 / text-4xl / font-extrabold</p>
                         <h1 class="text-4xl font-extrabold text-slate-800">قورئانی پیرۆز (Quran Kareem)</h1>
@@ -250,10 +267,19 @@
                         <p class="text-base font-medium text-slate-600 leading-relaxed max-w-2xl">ئەم بەرنامەیە دیارییە بۆ هەموو موسڵمانان. ئامانجمان ئاسانکردنی فێربوونی قورئانی پیرۆزە بۆ هەموو تەمەنێک بە شێوازێکی مۆدێرن و سەرنجڕاکێش.</p>
                     </div>
                 </div>
-                <div class="md:w-1/3 bg-slate-50 p-8 rounded-2xl border border-slate-100 flex items-center justify-center text-center">
-                    <div>
-                        <p class="text-[11px] text-slate-400 font-mono mb-4 uppercase tracking-wider" dir="ltr">Arabic Focus - font-serif</p>
-                        <p class="font-serif text-3xl text-primary leading-loose">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+
+                <!-- Amiri Quran (Quranic Font) -->
+                <div class="md:w-1/3 bg-slate-50 p-8 rounded-2xl border border-slate-100 flex flex-col text-center" dir="ltr">
+                    <div class="flex flex-col items-center border-b border-slate-200 pb-4 mb-6 w-full">
+                        <h3 class="text-xl font-bold text-slate-800 font-sans">Amiri Quran</h3>
+                        <p class="text-sm text-slate-500 mb-3">Quranic Verses Display</p>
+                        <a href="https://fonts.google.com/specimen/Amiri+Quran" target="_blank" class="flex items-center gap-2 bg-white hover:bg-slate-50 text-slate-700 px-4 py-2 rounded-xl text-xs font-bold border border-slate-200 transition-colors shadow-sm">
+                            <i data-lucide="external-link" class="w-3 h-3"></i> Google Fonts
+                        </a>
+                    </div>
+                    <div class="flex-1 flex flex-col justify-center">
+                        <p class="text-[11px] text-slate-400 font-mono mb-4 uppercase tracking-wider">Arabic Focus / font-quran</p>
+                        <p class="font-quran text-4xl text-primary leading-loose" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
                     </div>
                 </div>
             </div>
